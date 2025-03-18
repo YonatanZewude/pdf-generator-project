@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="pdf-content">
+        <header>
+            <h1>Min HTML-sida</h1>
+            <h2>PDF Export Test</h2>
+        </header>
+
+        <section>
+            <h3>📜 Introduktion</h3>
+            <p>Detta är en testsida som visar hur vi kan generera en PDF från HTML med hjälp av Puppeteer.</p>
+        </section>
+
+        <section>
+            <h3>📷 Bild</h3>
+            <p>Denna bild kommer att inkluderas i PDF-filen.</p>
+            <img src="https://source.unsplash.com/600x300/?nature" alt="Naturbild">
+        </section>
+
+        <section>
+            <h3>📊 Tabell</h3>
+            <p>Här är en exempel-tabell med data.</p>
+            <table>
+                <tr>
+                    <th>Namn</th>
+                    <th>Ålder</th>
+                    <th>Stad</th>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>25</td>
+                    <td>Stockholm</td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td>30</td>
+                    <td>Göteborg</td>
+                </tr>
+                <tr>
+                    <td>Sara</td>
+                    <td>28</td>
+                    <td>Malmö</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>📝 Lista</h3>
+            <ul>
+                <li>✔️ Punkt 1: HTML och CSS-stöd</li>
+                <li>✔️ Punkt 2: Bild inkludering</li>
+                <li>✔️ Punkt 3: Tabeller fungerar</li>
+                <li>✔️ Punkt 4: Borttagning av knappar i PDF</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>📚 Stycken med text</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla urna id magna suscipit, vel dictum velit sollicitudin. Nullam et risus id magna scelerisque dapibus.</p>
+            <p>Ut malesuada orci sit amet erat consectetur, ac egestas ipsum fermentum. Duis euismod enim non libero pretium, nec ultricies libero bibendum.</p>
+        </section>
+
+        <button onclick="downloadPDF()">Ladda ner PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
