@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yonatan",
   "license": "ISC",
   "description": "",
   "dependencies": {
